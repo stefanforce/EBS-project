@@ -1,2 +1,0 @@
-{(company,"Tesla");(value,1.8299073955169374);(drop,0.36563117261950384);(variation,3.483046239453011);(date,Fri Apr 01 17:19:04 EEST 2022)}
-{(company,"UIPath");(value,2.4421094880104626);(drop,0.38105998592777135);(variation,3.1294530004520063);(date,Fri Apr 01 17:20:04 EEST 2022)}

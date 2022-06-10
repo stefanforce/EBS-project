@@ -1,0 +1,1 @@
+{(company,=,"Microsoft");(value,<,16.0);(drop,<,9.0)}

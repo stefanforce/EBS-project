@@ -5,8 +5,9 @@ const fs = require('fs');
 const client = new net.Socket();
 
 const subscriptions = fs.readFileSync('./subscriptions.txt', 'utf8');
+let x = Math.floor((Math.random() * 100000) + 1);
 
-let file = fs.writeFileSync('./recievedPublications.txt', '');
+let file = fs.writeFileSync('./'+ x +'.txt', '');
 
 client.connect(portOverlay, 'localhost', function() {
     client.write('subscriber ' + subscriptions);
@@ -14,6 +15,6 @@ client.connect(portOverlay, 'localhost', function() {
 
 client.on('data', function(data) {
     console.log(data.toString());
-    fs.appendFileSync('./recievedPublications.txt', data.toString());
+    fs.appendFileSync('./'+ x +'.txt', data.toString());
     }
 );
